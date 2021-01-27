@@ -3,18 +3,18 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Nav from "./components/Nav";
-import Home from "./components/Home";
-import About from "./components/About";
+import NavBar from "./components/NavBar";
+import HomePage from "./pages/HomePage";
+import PortfolioPage from "./pages/PortfolioPage";
 import Footer from "./components/Footer";
 
 export default function App() {
   return (
     <main>
-      <Nav />
+      <NavBar />
       <Switch>
-           <Route path='/' component={Home} exact />
-           <Route path='/about' component={About} />
+           <Route path='/' component={HomePage} exact />
+           <Route path='/portfolio' component={PortfolioPage} />
       </Switch>
       <Footer />
     </main>
