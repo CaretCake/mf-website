@@ -13,7 +13,7 @@ export default function App() {
     <main>
       <NavBar />
       <Switch>
-           <Route path='/' component={HomePage} exact />
+           <Route exact path='/' component={HomePage} />
            <Route path='/portfolio' component={PortfolioPage} />
       </Switch>
       <Footer />
